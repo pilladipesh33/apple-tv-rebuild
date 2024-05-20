@@ -1,7 +1,23 @@
+import { Container } from "@/components/container";
+import { Header } from "@/components/header";
+import { Hero } from "@/components/section/hero";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Apple TV
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <div>
+          <Container>usps</Container>
+        </div>
+        <div>
+          <Container>3 col layout</Container>
+        </div>
+        <div>
+          <Container>Carousel with posters</Container>
+        </div>
+      </main>
+    </>
   );
 }
